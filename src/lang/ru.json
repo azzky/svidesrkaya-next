@@ -1,4 +1,8 @@
 {
     "menu.contact": "Контакты",
-    "menu.about": "Обо мне"
+    "menu.about": "Обо мне",
+    "footer.copyright": "© {date} Irina Sviderskaya. Все права защищены.",
+    "about.ctaText": "Закажи съемку",
+    "contact.emailTitle": "Напиши мне:",
+    "contact.instaTitle": "Подпишись:"
 }
