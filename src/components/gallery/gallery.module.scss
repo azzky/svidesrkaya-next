@@ -1,0 +1,21 @@
+@import '../../styles/constants.scss';
+
+.grid {
+    display: grid;
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    & img {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        cursor: zoom-in;
+    }
+}
+
+@media screen and (min-width: $screen__m) {
+    .grid {
+        padding: 120px 40px 40px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

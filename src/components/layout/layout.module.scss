@@ -1,0 +1,10 @@
+@import '@/styles/constants.scss';
+@import '@/styles/_mixins.scss';
+
+.main {
+    min-block-size: 100dvh;
+}
+
+@media screen and (min-width: $screen__m) {
+    
+}

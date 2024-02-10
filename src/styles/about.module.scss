@@ -1,0 +1,53 @@
+@import '@/styles/constants.scss';
+@import '@/styles/_mixins.scss';
+
+.root {
+    padding: 40px 20px 0;
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.ctaButton {
+    display: inline-block;
+    border: 1px solid;
+    padding: 15px 30px;
+    text-align: center;
+    width: max-content;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 60px auto 120px;
+}
+
+@media screen and (min-width: $screen__m) {
+    .root {
+        padding: 120px 40px 0;
+    }
+
+    .bio {
+        max-width: 345px;
+    }
+
+    .content {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ctaButton {
+        grid-column: 1 / span 2;
+    }
+}

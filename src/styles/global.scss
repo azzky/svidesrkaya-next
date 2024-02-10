@@ -1,0 +1,117 @@
+@use '@/styles/mixins.scss' as mixin;
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-red: #f6522e;
+    --header-height: 35px;
+    --white-transparent: rgba(255, 255, 255, .4);
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans Variable', sans-serif;
+    font-size: 1.25rem;
+    outline: none;
+    overflow-x: hidden;
+    max-inline-size: 100vw;
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Open Sans Variable', sans-serif;
+}
+:-moz-placeholder {
+    font-family: 'Open Sans Variable', sans-serif;
+}
+::-moz-placeholder {
+    font-family: 'Open Sans Variable', sans-serif;
+}
+:-ms-input-placeholder {
+    font-family: 'Open Sans Variable', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+textarea,
+input {
+    font-family: 'Open Sans Variable', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+    transition: filter .4s ease-in-out !important;
+
+    &.nsfwImage {
+        min-width: 100%;
+        display: block;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-block-end: 1em;
+}
+
+svg {
+    fill: currentColor;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background: none;
+    color: var(--color-black);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.linky {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font-size: inherit;
+    color: currentColor;
+    margin-inline-start: 5px;
+}
+
+.no-display {
+    display: none;
+}
+
+.visually-hidden {
+    @include mixin.visually-hidden;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: var(--font-size-24);
+    }
+}

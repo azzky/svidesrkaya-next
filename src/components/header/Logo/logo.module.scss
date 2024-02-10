@@ -1,0 +1,13 @@
+@import '@/styles/constants.scss';
+@import '@/styles/_mixins.scss';
+
+.root {
+    font-weight: 300;
+    font-size: 24px; // todo
+}
+
+@media screen and (min-width: $screen__m) {
+    .root {
+        line-height: var(--header-height);
+    }
+}

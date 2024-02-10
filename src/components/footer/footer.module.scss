@@ -1,0 +1,14 @@
+@import '@/styles/constants.scss';
+
+.root {
+    padding: 20px;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: $screen__m) {
+    .root {
+        padding: 40px;
+    }
+}

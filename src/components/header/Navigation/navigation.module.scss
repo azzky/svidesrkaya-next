@@ -1,0 +1,35 @@
+@import '@/styles/constants.scss';
+@import '@/styles/_mixins.scss';
+
+.root {
+    text-align: center;
+    font-weight: 600;
+
+    & ul {
+        display: grid;
+        gap: 20px;
+    }
+
+    & a {
+        transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    & a:hover {
+        color: var(--color-red);
+    }
+}
+
+@media screen and (min-width: $screen__m) {
+    .root {
+        line-height: var(--header-height);
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+        & ul {
+            grid-auto-flow: column;
+            font-size: 1rem;
+            gap: 40px;
+        }
+    }
+}
