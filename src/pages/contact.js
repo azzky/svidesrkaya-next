@@ -5,18 +5,10 @@ import Layout from '@/components/layout/layout';
 import * as classes from '@/styles/contact.module.scss';
 
 const Contact = (props) => {
-    const { data, intl, locale } = props;
-
-    console.log(data);
+    const { data } = props;
 
     return (
         <Layout>
-            {/* <MainSchema data={{
-                title: intl.formatMessage({ id: 'contactpage.title' }),
-                metadescription: intl.formatMessage({ id: 'contactpage.seoDescription' })
-            }}
-            locale={locale}
-            isPage/> */}
             <div className={classes.root}>
                 <div>
                     <p>

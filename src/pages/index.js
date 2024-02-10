@@ -1,4 +1,4 @@
-import { injectIntl, FormattedMessage } from 'react-intl';
+import { injectIntl } from 'react-intl';
 
 import { client } from '@/lib/contentful';
 import { Gallery, Layout } from '@/components';
@@ -6,7 +6,7 @@ import { Gallery, Layout } from '@/components';
 // import MainSchema from '@/components/meta/meta';
 // import * as classes from '@/components/layout/layout.module.scss';
 
-const Home = ({ images, locale, intl }) => {
+const Home = ({ images }) => {
     return (
         <>
             {/* <MainSchema isHome

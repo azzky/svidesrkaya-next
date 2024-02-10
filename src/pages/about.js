@@ -7,9 +7,7 @@ import Layout from '@/components/layout/layout';
 import * as classes from '@/styles/about.module.scss';
 
 const About = (props) => {
-    const { data, intl, locale } = props;
-
-    console.log(data);
+    const { data } = props;
 
     return (
         <Layout>
