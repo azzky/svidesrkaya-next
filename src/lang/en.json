@@ -4,5 +4,11 @@
     "footer.copyright": "© {date} Irina Sviderskaya. All rights reserved.",
     "about.ctaText": "Book a photoshoot",
     "contact.emailTitle": "Write me to:",
-    "contact.instaTitle": "Follow my instagram:"
+    "contact.instaTitle": "Follow my instagram:",
+    "imagesAlt": "{hasName, select, true {Portrait Photo in Belgrade - {person}} other {Portrait Photo in Belgrade}}",
+    "homepage.h1": "Professional Portrait Photography in Belgrade",
+    "homepage.h2": "Unique moments captured in portraits in Belgrade",
+    "homepage.title": "Professional Portraits in Belgrade: Irina Sviderskaya",
+    "homepage.description": "Unique portraits from an experienced photographer in Belgrade. Capture your important moments with us.",
+    "homepage.keywords": "portrait photographer, professional portraits, portrait photography, photographer for portraits, Belgrade"
 }

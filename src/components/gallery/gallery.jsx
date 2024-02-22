@@ -24,7 +24,8 @@ const lightBoxReducer = (state, action) => {
 
 const Gallery = (props) => {
     const {
-        images
+        images,
+        intl
     } = props;
 
     const [lightBoxVal, lightBoxDispatch] = useReducer(lightBoxReducer, {
@@ -32,18 +33,19 @@ const Gallery = (props) => {
         isOpen: false,
     });
 
-    console.log(lightBoxVal);
-
     return (
         <section>
             <ul className={classes.grid}>
                 {images.map((el, index) => (
-                    <li key={index}>
+                    <li key={index} className={index}>
                         <Image
-                            alt=""
+                            alt={intl.formatMessage({ id: 'imagesAlt' }, {
+                                person: el.fields.description,
+                                hasName: el.fields.description?.length > 0
+                            })}
                             src={el.fields.file.url}
-                            width={500}
-                            height={500}
+                            width={el.metadata.tags.length > 0 ? 50 : 500}
+                            height={el.metadata.tags.length > 0 ? 50 : 500}
                             quality={95}
                             onClick={() => lightBoxDispatch({
                                 type: 'photoIndex_Open',
