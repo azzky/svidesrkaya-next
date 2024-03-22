@@ -10,5 +10,8 @@
     "homepage.h2": "Unique moments captured in portraits in Belgrade",
     "homepage.title": "Professional Portraits in Belgrade: Irina Sviderskaya",
     "homepage.description": "Unique portraits from an experienced photographer in Belgrade. Capture your important moments with us.",
-    "homepage.keywords": "portrait photographer, professional portraits, portrait photography, photographer for portraits, Belgrade"
+    "homepage.keywords": "portrait photographer, professional portraits, portrait photography, photographer for portraits, Belgrade",
+    "agePopup.text": "This website includes nudity content. Please confirm your age:",
+    "agePopup.cancel": "I’m under 18",
+    "agePopup.confirm": "I’m 18+"
 }

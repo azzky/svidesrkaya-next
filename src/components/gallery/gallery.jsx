@@ -25,6 +25,7 @@ const lightBoxReducer = (state, action) => {
 const Gallery = (props) => {
     const {
         images,
+        pageNsfw,
         intl
     } = props;
 
@@ -44,8 +45,8 @@ const Gallery = (props) => {
                                 hasName: el.fields.description?.length > 0
                             })}
                             src={el.fields.file.url}
-                            width={el.metadata.tags.length > 0 ? 50 : 500}
-                            height={el.metadata.tags.length > 0 ? 50 : 500}
+                            width={!pageNsfw && el.metadata.tags.length > 0 ? 50 : 500}
+                            height={!pageNsfw && el.metadata.tags.length > 0 ? 50 : 500}
                             quality={95}
                             onClick={() => lightBoxDispatch({
                                 type: 'photoIndex_Open',

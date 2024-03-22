@@ -1,12 +1,13 @@
+import { useState } from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 
 import { client } from '@/lib/contentful';
-import { Gallery, Layout } from '@/components';
-// import config from '@/components/meta/config';
+import { Gallery, Layout, NsfwPopup } from '@/components';
 import MainSchema from '@/components/meta/meta';
-// import * as classes from '@/components/layout/layout.module.scss';
 
 const Home = ({ images, intl }) => {
+    const [pageNsfw, setPageNsfw] = useState(false);
+
     return (
         <>
             <MainSchema data={{
@@ -22,8 +23,10 @@ const Home = ({ images, intl }) => {
             </h2>
             <Layout>
                 <Gallery images={images.grid}
-                    intl={intl}/>
+                    intl={intl}
+                    pageNsfw={pageNsfw}/>
             </Layout>
+            <NsfwPopup setPageNsfw={setPageNsfw}/>
         </>
     );
 };
